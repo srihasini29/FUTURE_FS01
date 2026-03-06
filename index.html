@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Srihasini | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <h1><span>Srihasini</span></h1>
+    <p>B.Tech Artificial Intelligence Student</p>
+    <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#resume" class="btn-outline">View Resume</a>
+    </div>
+</header>
+
+<!-- About Me -->
+<section class="section slide" id="about">
+    <h2>About Me</h2>
+    <p>
+        I am passionate about Artificial Intelligence and Web Development.
+        I enjoy building creative and logical projects using modern technologies.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <p>C | Java | Python | HTML | GitHub</p>
+</section>
+
+<section class="section slide" id="projects">
+    <h2>Projects</h2>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>Derma Guide – Skin Care Recommendation System</h3>
+          
+
+            <button class="btn" onclick="openModal()">
+                View Project
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ✅ Modal Box -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h3>Derma Guide – Skin Care Recommendation System</h3>
+        <p>
+            This project recommends skincare products based on user skin type.
+            Users select their skin type (Dry, Oily, Combination, Sensitive)
+            and the system suggests suitable products accordingly.
+        </p>
+    </div>
+</div>
+
+<!-- Resume Section -->
+<section class="section slide" id="resume">
+    <h2>Resume</h2>
+    <p>You can view or download my resume below.</p>
+
+    <!-- View Resume -->
+ <button class="btn-outline" onclick="openResumeModal()">
+    View Resume
+</button>
+
+<a href="SriHasini_Resume.pdf" download class="btn">
+    Download Resume
+</a>
+</section>
+
+<!-- Contact Section -->
+<section class="section slide" id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button class="btn">Send Message</button>
+    </div>
+</section>
+<!-- Resume Modal -->
+<div id="resumeModal" class="modal">
+    <div class="modal-content resume-modal">
+        <span class="close" onclick="closeResumeModal()">&times;</span>
+
+        <h3>My Resume</h3>
+
+        <iframe src="SriHasini_Resume.pdf" width="100%" height="500px"></iframe>
+    </div>
+</div>
+<footer>
+    © 2026 Srihasini | All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
